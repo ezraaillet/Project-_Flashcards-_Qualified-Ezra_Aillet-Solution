@@ -85,8 +85,8 @@ export default function Study() {
                     <h5 className="card-title">{deck.cards && `Card ${index + 1} of ${deck.cards.length}`}</h5>
                     <p className="card-subtitle mb-2 text-muted">{!deck.cards ? "Loading..." : display}</p>
                     <button onClick={() => {
-                        setFlip(true);
-                        setDisplay(deck.cards[index].back);
+                        setFlip(false);
+                        setDisplay(deck.cards[index].front);
                     }} type="button" className="btn btn-secondary" style={{ margin: "8px" }}>Flip</button>
                     <button onClick={() => {
                         setFlip(false);

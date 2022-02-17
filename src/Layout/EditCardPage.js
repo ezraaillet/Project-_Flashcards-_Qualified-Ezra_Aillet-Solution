@@ -44,7 +44,7 @@ export default function EditCardPage() {
 
     const handleSave = (event) => {
         event.preventDefault();
-        updateCard(formData).then((deck) => history.push(`/decks/${deck.id}`))
+        updateCard(formData).then((deck) => history.push(`/decks/${deckId}`))
     }
 
     return (
